@@ -1,0 +1,5 @@
+method,mean_total_cost,cvar90_total_cost,slo_violation_rate,mean_inspections,mean_latency_ms,mean_deployment_cost,mean_inspection_cost
+adaptive_voi,12.8675,15.7513,0.0,2.399,85.837,12.3876,0.4799
+inspect_all,12.6025,15.0073,0.0,9.0,103.827,10.8025,1.8
+no_inspection,15.5467,15.9667,0.0023,0.0,83.896,15.5,0.0
+random_matched,15.421,16.2243,0.0,2.399,82.959,14.9412,0.4799

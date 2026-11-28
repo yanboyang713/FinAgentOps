@@ -1,0 +1,116 @@
+{
+  "dataset": {
+    "repo": "juliensimon/open-agent-traces",
+    "revision": "dff8ed6331f5abf9ec8ad825088eeb4caa6715a4",
+    "license": "MIT",
+    "dataset_is_synthetic": true
+  },
+  "seed": 6111,
+  "workflows": 403,
+  "cloudsim_profile": "cloudsim-fullmesh/compute_profile.csv",
+  "assumptions": {
+    "cloudsim_relative_speed_factor": [
+      0.77272727,
+      1.0,
+      1.36363636
+    ],
+    "site_hourly_usd": [
+      0.2,
+      0.42,
+      0.78
+    ],
+    "site_availability": [
+      0.997,
+      0.999,
+      0.9995
+    ],
+    "egress_usd_per_gb": [
+      0.02,
+      0.09,
+      0.08
+    ],
+    "link_profiles": {
+      "OnPrem-CloudA": {
+        "bw_mbps": 200.0,
+        "latency_ms": 25.0,
+        "prob": [
+          0.9,
+          0.08,
+          0.02
+        ]
+      },
+      "OnPrem-CloudB": {
+        "bw_mbps": 120.0,
+        "latency_ms": 48.0,
+        "prob": [
+          0.84,
+          0.12,
+          0.04
+        ]
+      },
+      "CloudA-CloudB": {
+        "bw_mbps": 300.0,
+        "latency_ms": 18.0,
+        "prob": [
+          0.92,
+          0.07,
+          0.01
+        ]
+      }
+    },
+    "state_availability": [
+      0.999,
+      0.97,
+      0.0
+    ],
+    "failure_penalty_usd": 0.05,
+    "risk_weight": 0.5,
+    "cvar_alpha": 0.9,
+    "chance_limit": 0.1,
+    "deadline_factor": 1.15,
+    "inspection_cost_usd_per_link": 0.0005,
+    "payload_scale": 1000.0,
+    "topologies": {
+      "full_mesh": [
+        [
+          "OnPrem",
+          "CloudA"
+        ],
+        [
+          "OnPrem",
+          "CloudB"
+        ],
+        [
+          "CloudA",
+          "CloudB"
+        ]
+      ],
+      "hub_and_spoke": [
+        [
+          "OnPrem",
+          "CloudA"
+        ],
+        [
+          "OnPrem",
+          "CloudB"
+        ]
+      ],
+      "selective_peering": [
+        [
+          "OnPrem",
+          "CloudA"
+        ],
+        [
+          "CloudA",
+          "CloudB"
+        ]
+      ]
+    }
+  },
+  "limitations": [
+    "Open Agent Traces is generated/synthetic, not a production workload trace.",
+    "Cloud prices, link profiles, link-state priors, site speeds, and failure penalty are assumptions.",
+    "Link inspection reveals the current categorical link state perfectly.",
+    "Risk criterion is nested posterior CVaR with a chance constraint; it is not global CVaR over the adaptive policy."
+  ]
+}

@@ -1,0 +1,4 @@
+site,vm_mips,cloudsim_elapsed_ms,effective_mips,speed_factor,cloudsim_version
+OnPrem,850.000,11764.705882,850.000000,0.77272727,8.0.0
+CloudA,1100.000,9090.909091,1100.000000,1.00000000,8.0.0
+CloudB,1500.000,6666.666667,1500.000000,1.36363636,8.0.0

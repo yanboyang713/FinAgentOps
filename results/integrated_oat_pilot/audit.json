@@ -1,0 +1,180 @@
+{
+  "source": {
+    "repo": "juliensimon/open-agent-traces",
+    "revision": "dff8ed6331f5abf9ec8ad825088eeb4caa6715a4",
+    "license": "MIT",
+    "dataset_is_synthetic": true
+  },
+  "domains": {
+    "customer-support-triage": {
+      "pattern": "sequential",
+      "runs": 50,
+      "events": 1483,
+      "conformant_runs": 41,
+      "included_runs": 41,
+      "observed_handoffs": 82,
+      "template_edges": 82,
+      "covered_template_edges": 82,
+      "node_counts": {
+        "3": 41
+      },
+      "excluded": {
+        "deviant_trace_excluded": 9
+      }
+    },
+    "legal-document-analysis": {
+      "pattern": "sequential",
+      "runs": 50,
+      "events": 1498,
+      "conformant_runs": 43,
+      "included_runs": 43,
+      "observed_handoffs": 86,
+      "template_edges": 86,
+      "covered_template_edges": 86,
+      "node_counts": {
+        "3": 43
+      },
+      "excluded": {
+        "deviant_trace_excluded": 7
+      }
+    },
+    "financial-analysis": {
+      "pattern": "sequential",
+      "runs": 50,
+      "events": 1471,
+      "conformant_runs": 38,
+      "included_runs": 38,
+      "observed_handoffs": 76,
+      "template_edges": 76,
+      "covered_template_edges": 76,
+      "node_counts": {
+        "3": 38
+      },
+      "excluded": {
+        "deviant_trace_excluded": 12
+      }
+    },
+    "ecommerce-product-enrichment": {
+      "pattern": "sequential",
+      "runs": 50,
+      "events": 1489,
+      "conformant_runs": 48,
+      "included_runs": 48,
+      "observed_handoffs": 96,
+      "template_edges": 96,
+      "covered_template_edges": 96,
+      "node_counts": {
+        "3": 48
+      },
+      "excluded": {
+        "deviant_trace_excluded": 2
+      }
+    },
+    "code-review-pipeline": {
+      "pattern": "supervisor",
+      "runs": 50,
+      "events": 2035,
+      "conformant_runs": 42,
+      "included_runs": 42,
+      "observed_handoffs": 168,
+      "template_edges": 252,
+      "covered_template_edges": 168,
+      "node_counts": {
+        "5": 42
+      },
+      "excluded": {
+        "deviant_trace_excluded": 8
+      }
+    },
+    "data-pipeline-debugging": {
+      "pattern": "supervisor",
+      "runs": 50,
+      "events": 2033,
+      "conformant_runs": 37,
+      "included_runs": 37,
+      "observed_handoffs": 148,
+      "template_edges": 222,
+      "covered_template_edges": 148,
+      "node_counts": {
+        "5": 37
+      },
+      "excluded": {
+        "deviant_trace_excluded": 13
+      }
+    },
+    "incident-response": {
+      "pattern": "supervisor",
+      "runs": 50,
+      "events": 1976,
+      "conformant_runs": 34,
+      "included_runs": 34,
+      "observed_handoffs": 136,
+      "template_edges": 204,
+      "covered_template_edges": 136,
+      "node_counts": {
+        "5": 34
+      },
+      "excluded": {
+        "deviant_trace_excluded": 16
+      }
+    },
+    "market-research": {
+      "pattern": "parallel",
+      "runs": 50,
+      "events": 1671,
+      "conformant_runs": 37,
+      "included_runs": 37,
+      "observed_handoffs": 148,
+      "template_edges": 222,
+      "covered_template_edges": 148,
+      "node_counts": {
+        "5": 37
+      },
+      "excluded": {
+        "deviant_trace_excluded": 13
+      }
+    },
+    "content-generation": {
+      "pattern": "parallel",
+      "runs": 50,
+      "events": 1668,
+      "conformant_runs": 41,
+      "included_runs": 41,
+      "observed_handoffs": 164,
+      "template_edges": 246,
+      "covered_template_edges": 164,
+      "node_counts": {
+        "5": 41
+      },
+      "excluded": {
+        "deviant_trace_excluded": 9
+      }
+    },
+    "academic-paper-review": {
+      "pattern": "parallel",
+      "runs": 50,
+      "events": 1695,
+      "conformant_runs": 42,
+      "included_runs": 42,
+      "observed_handoffs": 168,
+      "template_edges": 252,
+      "covered_template_edges": 168,
+      "node_counts": {
+        "5": 42
+      },
+      "excluded": {
+        "deviant_trace_excluded": 8
+      }
+    }
+  },
+  "exclusions": {
+    "deviant_trace_excluded": 97
+  },
+  "included_runs": 403,
+  "included_by_pattern": {
+    "sequential": 170,
+    "supervisor": 113,
+    "parallel": 120
+  },
+  "message_edge_coverage": 0.7318757192174914
+}
